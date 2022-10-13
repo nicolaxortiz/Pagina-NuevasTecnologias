@@ -1,6 +1,6 @@
 :root {
-    --w: calc(70vw / 6);
-    --h: calc(70vh / 4);
+    --w: calc(110vw / 10);
+    --h: calc(50vh / 2);
 }
 
 * {
@@ -11,7 +11,7 @@ body {
     padding: 0;
     margin: 0;
     -webkit-perspective: 1000;
-    background: powderblue;
+    background: #057a8d;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -56,12 +56,12 @@ div {
 }
 
 .superior {
-    background: linear-gradient(orange, darkorange);
+    background: linear-gradient(#f1c111, #f0cf57);
 }
 
 .nuevo-juego {
     cursor: pointer;
-    background: linear-gradient(orange, darkorange);
+    background: linear-gradient(#f1c111, #f0cf57);
     padding: 20px;
     border-radius: 50px;
     border: white 5px solid;
@@ -79,4 +79,9 @@ div {
     100% {
         transform: rotateY(0deg);
     }
+}
+
+h1{
+    color: white;
+    text-align: center;
 }

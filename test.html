@@ -1,0 +1,85 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+<title>T E S T</title>
+<script>
+function resultado() {
+var p1, p2, p3, p4, nota;
+ 
+
+if (document.getElementById('p11').checked==true) {p1=1}
+else {p1=0}
+
+if (document.getElementById('p22').checked==true) {p2=1}
+else {p2=0}
+
+if (document.getElementById('p33').checked==true) {p3=1}
+else {p3=0}
+
+if (document.getElementById('p44').checked==true) {p4=1}
+else {p4=0}
+ 
+nota=p1+p2+p3+p4;
+alert(" Aciertos: " + nota);
+location.reload();
+}
+</script>
+</head>
+<body>
+<h2 class="text-center mt-4" style="background-color: #057a8d; padding: 15px; color: white">Test de Seguridad</h2>
+<hr>
+<form style="font:normal 16px sans-serif">
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-6">
+                <p><strong>Si un desconocido te pide informacion de tu casa, ¿Que debes hacer primero?</strong></p>
+                <p onclick="this.style.color='#057a8d'"><input type="radio" name="pregunta1" id="p11"> Avisarle a tus padres</p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> Darle la informacion</p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> Ignorarlo y seguir navegando </p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> Decirle malas palabras</p>
+            </div>
+            <div class="col-6">
+                <p><strong>Si un adulto esta mirando lo que haces en internet, es porque ese adulto esta:</strong></p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p21"> Ignorandote </p>
+                <p onclick="this.style.color='#057a8d'"><input type="radio" name="pregunta2" id="p22"> Supervisando lo que haces</p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> Juzgandote</p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p24"> Hablandote</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-6">
+                <p>Si mandaste una foto, y ahora te esta acosando por eso, ¿Que deberias hacer?</p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p31"> Enviarle mas fotos</p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p32"> Ocualtar todo y seguir tu solo</p>
+                <p onclick="this.style.color='#057a8d'"><input type="radio" name="pregunta3" id="p33"> Decrile a tus padres, para que puedan ayudarte</p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p34"> Irte a dormir</p>   
+            </div>
+            <div class="col-6">
+                <p>Al ver que una pagina es extraña, lo que debes hacer es:</p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p41"> Seguir en ella</p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p42"> Dar click en todos los anuncios</p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p43"> Descargar contenido de ella</p>
+                <p onclick="this.style.color='#057a8d'"><input type="radio" name="pregunta4" id="p44"> Salir de ella</p>
+            </div>
+        </div>
+    </div>
+
+<hr>
+
+<div class="container text-center mt-2">
+    <div class="row">
+        <div class="col-12">
+            <p><input type="button" value=" R E S U L T A D O " onclick="resultado()" class="btn btn-warning"/></p>
+        </div>
+    </div>
+</div>
+
+</form>
+</body>
+</html>
